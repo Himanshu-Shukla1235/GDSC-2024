@@ -31,9 +31,10 @@ body {
     align-items: center;
     flex-direction: column;
     width: 18rem;
-    height: 30rem;
+    height: 38rem;
     background-color: rgba(0, 0, 0, 0.658);
     border-radius: 10px;
+    margin-bottom: 7rem;
   }
   .Form {
     display: flex;
@@ -47,10 +48,14 @@ body {
   
   }
   .Form label{
-    color: blueviolet;
+    color: rgb(255, 255, 255);
   }
   .Form input{
     border-radius: 5px;
     background-color: rgb(237, 219, 255);
+  }
+
+  .Loginopt{
+    margin-top: 30px;
   }
   

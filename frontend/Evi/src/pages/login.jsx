@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import "./Login.css";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
 
-const Login = () => {
+const Regester = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,6 +32,10 @@ const Login = () => {
       <main className="main">
         <div className="form">
           <form className="Form">
+          <h1 style={{ color: "green", fontFamily: "sans-serif", fontSize: 30 }}>
+        Login
+        </h1>
+           
             <label htmlFor="email">Email:</label>
             <input
               type="email"
@@ -36,9 +43,11 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Email"
+              // placeholder="Email"
               required
             />
+
+           
 
             <label htmlFor="password">Password:</label>
             <input
@@ -47,11 +56,39 @@ const Login = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Password"
+              // placeholder="Password"
               required
             />
 
-            <button type="submit">Login</button>
+           
+
+            <Button
+              variant="contained"
+              type="submit"
+              style={{ backgroundColor: "green", height: 25 ,width:115,borderRadius:13}}
+            >
+              Submit
+            </Button>
+            <div className="Loginopt">
+              {" "}
+              <Stack direction="row" spacing={2}>
+                <Avatar
+                  alt="Remy Sharp"
+                  sx={{ width: 24, height: 24 }}
+                  src="https://www.vectorlogo.zone/logos/google/google-icon.svg"
+                />
+                <Avatar
+                  alt="Travis Howard"
+                  sx={{ width: 24, height: 24 }}
+                  src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"
+                />
+                <Avatar
+                  alt="Cindy Baker"
+                  sx={{ width: 24, height: 24 }}
+                  src=""
+                />
+              </Stack>
+            </div>
           </form>
         </div>
       </main>
@@ -59,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Regester;

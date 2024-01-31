@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import "./Regester.css"
+import "./Regester.css";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
 
 const Regester = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +32,9 @@ const Regester = () => {
       <main className="main">
         <div className="form">
           <form className="Form">
+          <h1 style={{ color: "green", fontFamily: "sans-serif", fontSize: 30 }}>
+        Signup
+        </h1>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -84,7 +90,33 @@ const Regester = () => {
               required
             />
 
-            <button type="submit">Register</button>
+            <Button
+              variant="contained"
+              type="submit"
+              style={{ backgroundColor: "green", height: 25 ,width:115,borderRadius:13}}
+            >
+              Submit
+            </Button>
+            <div className="Loginopt">
+              {" "}
+              <Stack direction="row" spacing={2}>
+                <Avatar
+                  alt="Remy Sharp"
+                  sx={{ width: 24, height: 24 }}
+                  src="https://www.vectorlogo.zone/logos/google/google-icon.svg"
+                />
+                <Avatar
+                  alt="Travis Howard"
+                  sx={{ width: 24, height: 24 }}
+                  src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"
+                />
+                <Avatar
+                  alt="Cindy Baker"
+                  sx={{ width: 24, height: 24 }}
+                  src=""
+                />
+              </Stack>
+            </div>
           </form>
         </div>
       </main>

@@ -10,10 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         {" "}
-        <Avatar
-          alt="Travis Howard"
-          src="https://github.com/Himanshu-Shukla1235/GDSC-2024/blob/main/frontend/Evi/public/images/10502868_4486096.jpg?raw=true"
-        />
+        <h1 style={{fontFamily:"sans-serif",color:"green"}}>E</h1>
       </div>
       <div className="list">
         {" "}
@@ -21,12 +18,12 @@ const Navbar = () => {
           alt="Travis Howard"
           src="https://avatars.githubusercontent.com/u/145251086?v=4"
         />{" "}
-        <h1 style={{ color: "white", fontFamily: "sans-serif", fontSize: 15 }}>
+        <h1 style={{ color: "white", fontFamily: "sans-serif", fontSize: 13 }}>
           {username}
         </h1>
         <ul>
           <li>
-            <NavLink to={"/"}>home</NavLink>
+            <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
             <NavLink to={"/login "}>Login</NavLink>
@@ -36,6 +33,9 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to={"/regester "}>Regester</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/settings "}>Settings</NavLink>
           </li>
 
           <li>
