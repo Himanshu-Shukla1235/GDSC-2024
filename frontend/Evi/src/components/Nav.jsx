@@ -3,19 +3,27 @@ import "../components/nav.css";
 import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import { green, red } from "@mui/material/colors";
-const username="Username"
+const username = "Username";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">logo</div>
+      <div className="logo">
+        {" "}
+        <Avatar
+          alt="Travis Howard"
+          src="https://avatars.githubusercontent.com/u/145251086?v=4"
+        />
+      </div>
       <div className="list">
         {" "}
         <Avatar
           alt="Travis Howard"
           src="https://avatars.githubusercontent.com/u/145251086?v=4"
         />{" "}
-        <h1 style={{color:"white",fontFamily:"sans-serif",fontSize:15}}>{username}</h1>
+        <h1 style={{ color: "white", fontFamily: "sans-serif", fontSize: 15 }}>
+          {username}
+        </h1>
         <ul>
           <li>
             <NavLink to={"/"}>home</NavLink>
