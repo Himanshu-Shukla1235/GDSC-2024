@@ -12,7 +12,7 @@ const Navbar = () => {
         {" "}
         <Avatar
           alt="Travis Howard"
-          src="https://avatars.githubusercontent.com/u/145251086?v=4"
+          src="https://github.com/Himanshu-Shukla1235/GDSC-2024/blob/main/frontend/Evi/public/images/10502868_4486096.jpg?raw=true"
         />
       </div>
       <div className="list">
